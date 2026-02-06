@@ -2,29 +2,44 @@ import { Button } from "@/components/ui/button"
 
 const plans = [
   {
-    units: "1 - 20",
-    label: "Pequeño",
-    price: "Desde $150.000",
-    description: "Ideal para condominios pequeños y comunidades residenciales menores.",
+    units: "Comunidades Pequeñas",
+    description: "Ideal para comunidades de menor tamaño Administración enfocada en el control operativo y financiero básico, con atención directa y cumplimiento normativo.",
+    Items: [
+      "Condominios de pocas unidades",
+      "Control de gastos comunes",
+      "Comunicación directa con comité",
+      "Cumplimiento legal esencial",
+    ],
   },
   {
-    units: "21 - 50",
-    label: "Mediano",
-    price: "Desde $250.000",
-    description: "Perfecto para edificios medianos con necesidades de gestión moderadas.",
-    featured: true,
+    units: "Comunidades Medianas",
+    description: "Gestión integral y balanceada Servicio completo para edificios con mayor movimiento operativo y necesidades administrativas constantes.",
+    Items: [
+      "Administración operativa y financiera",
+      "Informes mensuales detallados",
+      "Gestión de proveedores y personal",
+      "Apoyo permanente al comité",
+    ],
   },
   {
-    units: "51 - 100",
-    label: "Grande",
-    price: "Desde $400.000",
-    description: "Para comunidades grandes que requieren atención dedicada.",
+    units: "Comunidades Grandes",
+    description: "Administración especializada y dedicada Pensado para comunidades que requieren mayor control, planificación y presencia administrativa.",
+    Items: [
+      "Gestión administrativa avanzada",
+      "Supervisión técnica y operativa",
+      "Control financiero reforzado",
+      "Mayor frecuencia de seguimiento",
+    ],
   },
   {
-    units: "100+",
-    label: "Corporativo",
-    price: "A convenir",
-    description: "Soluciones personalizadas para grandes desarrollos inmobiliarios.",
+    units: "Servicios Corporativos",
+    description: "Administración personalizada para grandes condominios, proyectos inmobiliarios o comunidades con requerimientos especiales",
+    Items: [
+      "Planes a medida",
+      "Soporte técnico, legal y financiero",
+      "Administración post-entrega",
+      "Gestión estratégica del condominio",
+    ],
   },
 ]
 
@@ -34,53 +49,45 @@ export function Pricing() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto">
           <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-4">
-            Honorarios
+            Nuestros Planes de Administración
           </p>
           <h2 className="text-3xl md:text-4xl font-semibold text-foreground leading-tight">
-            Honorarios referenciales
+            Planes adaptados al tamaño, complejidad y necesidades de cada comunidad.
           </h2>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            Nuestros honorarios se ajustan al tamaño y necesidades específicas de cada comunidad.
-            Los valores son referenciales y sujetos a evaluación personalizada.
+            Los servicios se ajustan a las características y necesidades específicas de cada comunidad, previa evaluación técnica y administrativa.
           </p>
         </div>
 
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {plans.map((plan) => (
             <div
-              key={plan.label}
-              className={`p-6 rounded-lg border transition-all ${
-                plan.featured
-                  ? "bg-primary text-primary-foreground border-primary shadow-xl scale-105"
-                  : "bg-background border-secondary hover:shadow-md hover:border-primary/30"
-              }`}
+              key={plan.units}
+              className={`p-4 rounded-lg border transition-all bg-background border-secondary hover:shadow-md hover:border-primary/30`}
             >
               <div
-                className={`text-sm font-medium mb-2 ${plan.featured ? "text-primary-foreground/70" : "text-muted-foreground"}`}
+                className={`text-sm font-medium mb-2 text-muted-foreground`}
               >
-                {plan.units} unidades
               </div>
-              <h3
-                className={`text-xl font-semibold mb-1 ${plan.featured ? "text-primary-foreground" : "text-foreground"}`}
-              >
-                {plan.label}
-              </h3>
               <div
-                className={`text-2xl font-bold mb-4 ${plan.featured ? "text-primary-foreground" : "text-foreground"}`}
+                className={`text-2xl font-bold mb-4 text-foreground`}
               >
-                {plan.price}
+                {plan.units}
               </div>
+              <ul className="list-disc list-inside text-muted-foreground text-sm">
+                {plan.Items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+              <br/>
               <p
-                className={`text-sm leading-relaxed mb-6 ${plan.featured ? "text-primary-foreground/80" : "text-muted-foreground"}`}
+                className={`text-sm leading-relaxed mb-6 text-muted-foreground`}
               >
                 {plan.description}
               </p>
+              <div className="flex-grow" />
               <Button
-                className={`w-full rounded-full font-semibold ${
-                  plan.featured
-                    ? "bg-accent text-accent-foreground hover:bg-accent/90"
-                    : "bg-primary text-primary-foreground hover:bg-primary/90"
-                }`}
+                className={`w-full rounded-full font-semibold bg-primary text-primary-foreground hover:bg-primary/90 mt-auto`}
               >
                 Solicitar cotización
               </Button>

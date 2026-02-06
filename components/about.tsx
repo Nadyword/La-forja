@@ -67,13 +67,13 @@ export function About() {
               Quiénes Somos
             </p>
             <h2 className="text-3xl md:text-4xl font-semibold text-foreground leading-tight">
-              Profesionalizando la administración de condominios en Chile
+              Empresa chilena especializada en la administración integral de edificios y condominios.
             </h2>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-              La Forja SpA nace con el propósito de transformar la administración de condominios en
-              Chile, ofreciendo un servicio profesional, transparente y orientado a las necesidades
-              reales de cada comunidad. Acompañamos a los comités de administración en la toma de
-              decisiones estratégicas.
+              Brindamos una gestión transparente, eficiente y cercana, con foco en el bienestar comunitario.
+              Trabajamos con estricto cumplimiento de la Ley de Copropiedad Inmobiliaria y la normativa laboral vigente.
+              Entregamos control financiero claro, apoyo permanente a comités y comunicación directa con copropietarios.
+              Administramos con profesionalismo, prevención y confianza.
             </p>
             
             <div className="mt-8 space-y-4">

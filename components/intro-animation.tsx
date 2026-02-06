@@ -36,10 +36,10 @@ export function IntroAnimation() {
             key={i}
             className="absolute w-2 h-2 bg-accent/30 rounded-full animate-float"
             style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 2}s`,
-              animationDuration: `${3 + Math.random() * 2}s`,
+              left: `${Math.round(Math.random() * 100)}%`,
+              top: `${Math.round(Math.random() * 100)}%`,
+              animationDelay: `${Math.round(Math.random() * 2)}s`,
+              animationDuration: `${Math.round(3 + Math.random() * 2)}s`,
             }}
           />
         ))}
