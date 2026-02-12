@@ -64,7 +64,7 @@ export function Transparency() {
               {items.map((item, index) => (
                 <div 
                   key={item.title} 
-                  className="flex gap-5 items-start group cursor-pointer p-4 rounded-xl hover:bg-secondary/30 transition-colors"
+                  className="flex gap-5 items-start group p-4 rounded-xl hover:bg-secondary/30 transition-colors"
                 >
                   <div className="flex-shrink-0 w-12 h-12 bg-primary rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
                     <item.icon className="w-5 h-5 text-primary-foreground" strokeWidth={1.5} />
@@ -79,11 +79,7 @@ export function Transparency() {
                 </div>
               ))}
             </div>
-            
-            <Button className="mt-8 bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6 group">
-              Ver demo de reportes
-              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </Button>
+
           </div>
           
           <div className="relative">

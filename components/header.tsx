@@ -41,12 +41,14 @@ export function Header() {
           ))}
         </div>
 
-        <Button
-          size="sm"
-          className="hidden md:inline-flex bg-accent text-accent-foreground hover:bg-accent/90 rounded-full px-6 font-semibold"
-        >
-          Contacto
-        </Button>
+        <a href="#contacto">
+          <Button
+            size="sm"
+            className="hidden md:inline-flex bg-accent text-accent-foreground hover:bg-accent/90 rounded-full px-6 font-semibold"
+          >
+            Contacto
+          </Button>
+        </a>
 
         <button
           type="button"

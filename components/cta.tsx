@@ -41,7 +41,7 @@ export function CTA() {
             </div>
           </div>
 
-          <div>
+          <div id="contacto">
             <h2 className="text-3xl md:text-4xl font-semibold text-foreground leading-tight text-balance">
               Fortalezca la gestión de su comunidad
             </h2>
@@ -52,7 +52,7 @@ export function CTA() {
 
             <div className="mt-8 space-y-4">
               {contactInfo.map((info) => (
-                <div key={info.label} className="flex items-center gap-4 group cursor-pointer">
+                <div key={info.label} className="flex items-center gap-4 group">
                   <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center group-hover:bg-primary transition-colors">
                     <info.icon className="w-5 h-5 text-primary group-hover:text-primary-foreground transition-colors" />
                   </div>
@@ -90,7 +90,7 @@ export function CTA() {
                 asChild
               >
                 <a
-                  href="https://www.facebook.com/tu_facebook_empresa"
+                  href="https://www.facebook.com/share/1B7doKiU21/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Facebook"

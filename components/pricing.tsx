@@ -86,11 +86,6 @@ export function Pricing() {
                 {plan.description}
               </p>
               <div className="flex-grow" />
-              <Button
-                className={`w-full rounded-full font-semibold bg-primary text-primary-foreground hover:bg-primary/90 mt-auto`}
-              >
-                Solicitar cotización
-              </Button>
             </div>
           ))}
         </div>

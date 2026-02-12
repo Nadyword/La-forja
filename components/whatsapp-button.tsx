@@ -66,7 +66,7 @@ export function WhatsAppButton() {
         </button>
         <p className="text-sm font-medium mb-1">Necesitas ayuda?</p>
         <p className="text-xs text-muted-foreground">
-          Escribenos por WhatsApp y te atenderemos de inmediato.
+          Escribenos por WhatsApp, te atenderemos a la brevedad posible.
         </p>
         {/* Arrow */}
         <div className="absolute right-[-6px] top-1/2 -translate-y-1/2 w-3 h-3 bg-card rotate-45" />

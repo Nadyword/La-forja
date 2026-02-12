@@ -112,7 +112,7 @@ export function Services() {
           {services.map((service, index) => (
             <div
               key={service.title}
-              className="group relative p-6 bg-card border border-secondary rounded-2xl hover:border-primary/30 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 cursor-pointer overflow-hidden"
+              className="group relative p-6 bg-card border border-secondary rounded-2xl hover:border-primary/30 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 overflow-hidden"
               style={{ animationDelay: `${index * 50}ms` }}
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/20 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2 group-hover:bg-primary/10 transition-colors" />

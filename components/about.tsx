@@ -78,7 +78,7 @@ export function About() {
             
             <div className="mt-8 space-y-4">
               {features.slice(0, 2).map((feature) => (
-                <div key={feature.title} className="flex items-start gap-4 group cursor-pointer">
+                <div key={feature.title} className="flex items-start gap-4 group">
                   <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                     <feature.icon className="w-6 h-6 text-primary group-hover:text-primary-foreground" strokeWidth={1.5} />
                   </div>
