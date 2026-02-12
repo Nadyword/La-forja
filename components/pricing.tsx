@@ -90,10 +90,6 @@ export function Pricing() {
           ))}
         </div>
 
-        <p className="mt-12 text-center text-sm text-muted-foreground">
-          * Los precios mostrados son referenciales en pesos chilenos (CLP) y están sujetos a una
-          evaluación personalizada según las características de cada condominio.
-        </p>
       </div>
     </section>
   )

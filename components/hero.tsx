@@ -1,10 +1,14 @@
 "use client"
 
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Building2, Shield, Scale } from "lucide-react"
 import Image from "next/image"
+import { MeetingFormDialog } from "@/components/meeting-form-dialog"
 
 export function Hero() {
+  const [meetingDialogOpen, setMeetingDialogOpen] = useState(false)
+
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
       <Image
@@ -34,18 +38,13 @@ export function Hero() {
           <Button
             size="lg"
             className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-full px-8 font-semibold group"
+            onClick={() => setMeetingDialogOpen(true)}
           >
             Agendar una reunión
             <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="rounded-full px-8 border-white/30 text-primary-foreground hover:bg-white/10 bg-transparent"
-          >
-            Conocer más
-          </Button>
         </div>
+        <MeetingFormDialog open={meetingDialogOpen} onOpenChange={setMeetingDialogOpen} />
 
         <div className="mt-16 grid grid-cols-3 gap-8 max-w-2xl mx-auto animate-fade-in animation-delay-600">
           <div className="flex flex-col items-center">
