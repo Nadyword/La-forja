@@ -43,6 +43,21 @@ export function Hero() {
             Agendar una reunión
             <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Button>
+
+          <Button
+            variant="outline"
+            size="lg"
+            className="border-2 border-accent bg-transparent text-accent hover:bg-accent/10 hover:text-accent-foreground hover:text-white rounded-full px-8 font-semibold group shadow-lg backdrop-blur-md transition-all duration-300"
+            onClick={() => window.open('/Document/OFERTA-DE-SERVICIOS.pdf', '_blank')}
+          >
+            <span className="flex items-center gap-2">
+              <svg className="w-5 h-5 text-accent group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                <path d="M8 17l4 4 4-4m-4-5v9" />
+                <path d="M20 12a8 8 0 10-16 0 8 8 0 0016 0z" />
+              </svg>
+              Ver oferta de servicios
+            </span>
+          </Button>
         </div>
         <MeetingFormDialog open={meetingDialogOpen} onOpenChange={setMeetingDialogOpen} />
 
